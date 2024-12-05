@@ -36,6 +36,21 @@ Body{
 
 }
 
+::-webkit-scrollbar-track {
+    background-color: var(--footerBackground);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fontGray); 
+  border-radius: 30px;
+}
+
+
+
 .container{
     min-height: 100vh;
 }
@@ -54,10 +69,11 @@ Body{
     text-decoration: none;
     color: var(--fontWhite);
     margin: 10px;
+    transition: transform 0.2s ease;
 }
 
 .header a:hover{
-    font-size: 42px;
+    transform: scale(1.05);
 }
 
 footer{
@@ -98,19 +114,48 @@ footer{
     font-family: 'Patrick Hand', cursive;
 }
 
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
     
-
-::-webkit-scrollbar-track {
-    background-color: var(--footerBackground);
+.animal-img img{
+    height: 200px;
+    width: auto;
 }
 
-::-webkit-scrollbar {
-    width: 5px;
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--fontGray); 
-  border-radius: 30px;
+.buttons button {
+    background: transparent;
+    height: 55px;
+    width: 170px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Patrick Hand', cursive;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.buttons button:hover {
+    transform: scale(1.05);
 }
 
 
+.text p {
+    font-size: 25px;
+}
+
+.animal-selection button.selected {
+    background-color: lightblue;
+    border: 2px solid blue;
+}

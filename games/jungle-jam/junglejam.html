@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>ThinkyTots | Jungle Jam</title>
+    <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script> 
 </head>
 <body>
     
@@ -9,14 +10,39 @@
     <div class="container">
 
         <div id="header"></div>
-        
 
+        <div class="main-container">
+            <div class="canvas">
+                <div class="animal-img">
+                    <img src="gifs/question.gif" alt="Animal">
+                </div>
+            </div>
+        
+            <div class="buttons">
+                <div class="text">
+                    <p>Which animal do you hear?</p>
+                </div>
+                <div class="play-sound">
+                    <button>Play Sound</button>
+                </div>
+                <div class="animal-selection">
+                    <button>Animal 1</button>
+                    <button>Animal 2</button>
+                    <button>Animal 3</button>
+                </div>
+                <div class="confirm-selection">
+                    <button>Confirm</button>
+                </div>
+            </div>
+
+        </div>
 
         <div id="footer"></div>
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
+    <script src="junglejam.js"></script>
     <script src="../layout.js" defer></script>
 </body>
 </html>
