@@ -14,7 +14,6 @@
 Body{
     background: var(--background);
     font-family: 'Patrick Hand', cursive;
-    min-height: 100vh;
     position: relative;
 
         background: 
@@ -36,106 +35,29 @@ Body{
       background-attachment: fixed;
 
 }
-    
+
+.container{
+    min-height: 100vh;
+}
 
 .header{
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding-top: 92px;
+    height: 100px;
     color: var(--black);
-}   
+}
 
-.header h1{
+.header a{
+    position: absolute;
     font-family: 'Patrick Hand', cursive;
-    font-size: 85px;
-    font-weight: lighter;
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--fontWhite);
+    margin: 10px;
 }
 
-#welcome{
-    font-family: 'Patrick Hand', cursive;
-    font-size: 30px;
-    margin-top: 10px;
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-#intro{
-    font-family: 'Patrick Hand', cursive;
-    font-size: 20px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 85%;
-}
-
-#note{
-    font-family: 'Patrick Hand', cursive;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 85%;
-    margin-top: 20px;
-}
-
-.header p{
-    font-family: 'Patrick Hand', cursive;
-    font-weight: lighter;
-    color: var(--black);
-    font-size: 19px;
-}
-
-
-.main-container {
-    width: 100%;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-    max-width: 1238px;
-    margin: 0 auto;
-    padding: 50px 100px;
-}
-
-.container {
-    width: 100%;
-    max-width: 50px;
-    height: auto;
-    max-width: 100%; 
-    overflow: hidden;
-    position: relative; 
-}
-
-.container img {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: 0.02s;
-}
-
-.container img:hover {
-    display: block;
-    cursor: pointer;
-    border: 3px solid var(--black);
-}
-
-@media (max-width: 518px) {
-    .main-container{
-        padding: 50px 40px;
-    }
-}
-
-@media (max-width: 389px) {
-    .main-container{
-        padding: 50px 10px;
-    }
+.header a:hover{
+    font-size: 42px;
 }
 
 footer{
@@ -176,9 +98,7 @@ footer{
     font-family: 'Patrick Hand', cursive;
 }
 
-
-
-
+    
 
 ::-webkit-scrollbar-track {
     background-color: var(--footerBackground);
