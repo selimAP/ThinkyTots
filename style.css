@@ -108,8 +108,14 @@ Body{
     height: auto;
     max-width: 100%; 
     overflow: hidden;
-    position: relative; 
+    position: relative;
+    transition: transform 0.3s ease;
 }
+
+.container:hover {
+    transform: scale(1.05);
+}
+
 
 .container img {
     width: 100%; 
@@ -118,13 +124,11 @@ Body{
     overflow: hidden;
     border-radius: 10px;
     transition: 0.02s;
-}
-
-.container img:hover {
     display: block;
     cursor: pointer;
     border: 3px solid var(--black);
 }
+
 
 @media (max-width: 518px) {
     .main-container{
@@ -192,5 +196,3 @@ footer{
   background: var(--fontGray); 
   border-radius: 30px;
 }
-
-
