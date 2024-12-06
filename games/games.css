@@ -121,6 +121,15 @@ footer{
     flex-direction: column;
     height: 70vh;
 }
+
+.main-container-shapehunter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    margin-top: 40px;
+}
     
 .animal-img img{
     height: 200px;
@@ -159,3 +168,30 @@ footer{
     background-color: lightblue;
     border: 2px solid blue;
 }
+
+.shape-selection .shape-btn.selected {
+    background-color: lightblue;
+    border: 2px solid blue;
+    color: darkblue;
+    font-weight: bold;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+.target-shape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.canvas-shapehunter p{
+    margin: 10px 0px;
+    font-size: 25px;
+}
+
+.canvas-shapehunter img{
+    height: 250px;
+    width: auto;
+}
+
