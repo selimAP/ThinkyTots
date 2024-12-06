@@ -107,14 +107,10 @@ Body{
     max-width: 50px;
     height: auto;
     max-width: 100%; 
-    overflow: hidden;
     position: relative;
-    transition: transform 0.3s ease;
 }
 
-.container:hover {
-    transform: scale(1.05);
-}
+
 
 
 .container img {
@@ -127,8 +123,11 @@ Body{
     display: block;
     cursor: pointer;
     border: 3px solid var(--black);
+    transition: transform 0.3s ease;
 }
-
+.container img:hover {
+    transform: scale(1.05);
+}
 
 @media (max-width: 518px) {
     .main-container{
