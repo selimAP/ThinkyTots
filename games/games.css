@@ -209,3 +209,19 @@ footer{
 #privacy{
     color: rgb(114, 114, 114);
 }
+
+@media screen and (max-width: 612px){
+    .buttons button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sortit-button-selection button{
+        height: 70px;
+        width: 70px;
+        font-size: 20px;
+    }
+    .sortit-main-container{
+        margin-top: 100px;
+    }
+}
