@@ -114,96 +114,72 @@ footer{
     font-family: 'Patrick Hand', cursive;
 }
 
-.main-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 70vh;
+.main-container {
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
 }
 
-.main-container-shapehunter{
+.main-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.main-container h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--highlight);
+}
+
+.main-container p, .main-container ul {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.main-container ul li {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+footer {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 150px;
+    padding: 20px 0;
     margin-top: 40px;
 }
-    
-.animal-img img{
-    height: 200px;
-    width: auto;
-}
 
-.buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px;
-}
-
-.buttons button {
-    background: transparent;
-    height: 55px;
-    width: 170px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-family: 'Patrick Hand', cursive;
-    margin: 5px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-.buttons button:hover {
-    transform: scale(1.05);
-}
-
-
-.text p {
-    font-size: 25px;
-}
-
-.animal-selection button.selected {
-    background-color: lightblue;
-    border: 2px solid blue;
-}
-
-.shape-selection .shape-btn.selected {
-    background-color: lightblue;
-    border: 2px solid blue;
-    color: darkblue;
+.footer a {
+    margin-bottom: 5px;
+    text-align: center;
+    color: var(--fontGray);
+    font-size: 18px;
     font-weight: bold;
-    transform: scale(1.05);
-    transition: all 0.2s ease;
+    line-height: 1.5;
+    text-decoration: none;
+    font-family: 'Patrick Hand', cursive;
+    transition: color 0.3s ease;
 }
 
-.target-shape{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.footer a:hover {
+    text-decoration: underline;
+    color: var(--fontGray);
 }
 
-.canvas-shapehunter p{
-    margin: 10px 0px;
-    font-size: 25px;
-}
-
-.canvas-shapehunter img{
-    height: 250px;
-    width: auto;
-}
-
-.sortit-title h2{
-    font-weight: lighter;
-}
-
-.sortit-button-selection button{
-    height: 100px;
-    width: 100px;
-    font-size: 35px;
-    cursor: pointer;
+.footer p {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: var(--fontGray);
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-family: 'Patrick Hand', cursive;
 }
 
 #privacy{

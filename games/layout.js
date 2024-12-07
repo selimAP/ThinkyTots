@@ -21,13 +21,14 @@
     document.body.insertAdjacentHTML('afterbegin', headerGames);
 
     const footerGames = `
-        <footer>
-            <div class="footer">
-                <a href="https://github.com/selimAP" target="_blank">Built and designed by selimAP.</a>
-                <a href="https://minihackathon.de/" target="_blank">This site was created during the Minihackathon 2.0 hosted by Kevin Chromik.</a>
-                <p>All rights reserved. ©</p>
-            </div>
-        </footer>
+    <footer>
+        <div class="footer">
+            <a href="https://github.com/selimAP" target="_blank">Built and designed by selimAP.</a>
+            <a href="https://minihackathon.de/" target="_blank">This site was created during the Minihackathon 2.0 hosted by Kevin Chromik.</a>
+            <a id="privacy" href="/privacy/privacy.html" target="_blank">Privacy policy</a>
+            <p>All rights reserved. ©</p>
+        </div>
+    </footer>
     `;
     document.body.insertAdjacentHTML('beforeend', footerGames);
 });

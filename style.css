@@ -167,6 +167,10 @@ footer{
     text-decoration: underline;
 }
 
+#privacy{
+    color: rgb(114, 114, 114);
+}
+
 .footer p{
     margin-top: 15px;
     margin-bottom: 0px;
