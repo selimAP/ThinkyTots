@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function playAudio(path) {
         const audio = new Audio(path);
-        audio.play().catch(error => console.error("Audio playback error:", error));
+        audio.play();
     }
 
     confirmButton.addEventListener("click", () => {

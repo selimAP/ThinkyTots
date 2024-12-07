@@ -2,18 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const buttons = document.querySelectorAll(".buttons button");
 
-
     buttons.forEach(button => {
         button.addEventListener("mouseover", () => {
-
             const audio = new Audio("../../sounds/button-hover.ogg");
             audio.play();
         });
     });
 });
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const animals = [
@@ -72,10 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         const soundPath = `sounds/${correctAnimal.toLowerCase().replace(" ", "")}.wav`;
-
-
         currentAudio = new Audio(soundPath);
-        currentAudio.play().catch(error => console.error("Audio playback error:", error));
+        currentAudio.play();
     });
 
     confirmButton.addEventListener("click", () => {
@@ -129,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.addEventListener("mouseover", (event) => {
         if (event.target.tagName === "BUTTON") {
             const hoverAudio = new Audio(hoverSoundPath);
-            hoverAudio.play().catch(error => console.error("Hover sound error:", error));
+            hoverAudio.play();
         }
     });
 
