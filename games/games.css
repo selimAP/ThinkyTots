@@ -195,3 +195,13 @@ footer{
     width: auto;
 }
 
+.sortit-title h2{
+    font-weight: lighter;
+}
+
+.sortit-button-selection button{
+    height: 100px;
+    width: 100px;
+    font-size: 35px;
+    cursor: pointer;
+}
